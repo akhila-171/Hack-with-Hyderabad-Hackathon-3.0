@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Meeting Prep Agent</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Meeting Prep Agent</h1>
+        <p>Prepare smarter. Meet better.</p>
+    </header>
+
+    <main>
+        <section class="add-customer">
+
+    <h2>Add New Customer</h2>
+
+    <input type="text" id="newCustomer"
+           placeholder="Customer Name">
+
+    <input type="text" id="newDiscussion"
+           placeholder="Previous Discussion">
+
+    <input type="text" id="newRequirement"
+           placeholder="Customer Requirement">
+
+    <input type="text" id="newFollowup"
+           placeholder="Pending Follow-up">
+
+    <input type="text" id="newTopics"
+           placeholder="Meeting Topics">
+
+    <button onclick="addCustomer()">
+        Add Customer
+    </button>
+
+</section>
+
+        <section class="search-box">
+            <h2>Prepare for a Meeting</h2>
+
+            <label>Customer Name</label>
+
+            <select id="customerName">
+                <option value="">Select Customer</option>
+                <option value="ABC Company">ABC Company</option>
+                <option value="XYZ Technologies">XYZ Technologies</option>
+                <option value="Global Solutions">Global Solutions</option>
+            </select>
+
+            <button onclick="prepareMeeting()">
+                Prepare Meeting
+            </button>
+        </section>
+
+
+        <section id="meetingResult" class="result">
+
+            <h2>Meeting Brief</h2>
+
+            <div class="card">
+                <h3>Customer Information</h3>
+                <p id="customerInfo"></p>
+            </div>
+
+            <div class="card">
+                <h3>Previous Discussions</h3>
+                <p id="previousDiscussion"></p>
+            </div>
+
+            <div class="card">
+                <h3>Customer Requirements</h3>
+                <p id="requirements"></p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Follow-ups</h3>
+                <p id="followups"></p>
+            </div>
+
+            <div class="card">
+                <h3>Suggested Meeting Topics</h3>
+                <p id="topics"></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart Meeting Prep Agent © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <section class="agent-section">
+    <h2>🤖 Meeting Prep Agent</h2>
+
+    <div id="agentResult">
+        <p>Select a customer and click <b>Prepare Meeting</b>.</p>
+    </div>
+</section>
+
+</body>
+</html>
